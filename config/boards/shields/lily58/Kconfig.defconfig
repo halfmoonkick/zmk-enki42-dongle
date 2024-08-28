@@ -8,20 +8,7 @@ config ZMK_KEYBOARD_NAME
 	
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
-	
-config ZMK_SPLIT
-	default y
 
-# Increase the transmit power of the dongle
-choice BT_CTLR_TX_PWR
-    default BT_CTLR_TX_PWR_PLUS_8
-endchoice
-
-endif
-
-if SHIELD_MY_KEYBOARD && !ZMK_SPLIT
-config ZMK_KEYBOARD_NAME
-    default "Lily58 Dongle"
 endif
 
 if SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT || SHIELD_LILY58_DONGLE 
@@ -29,22 +16,4 @@ if SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT || SHIELD_LILY58_DONGLE
 config ZMK_SPLIT
 	default y
 	
-endif
-
-if SHIELD_LILY58_DONGLE
-
-config ZMK_KEYBOARD_NAME
-    default "Lily58 dongle"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-# Increase the transmit power of the dongle
-choice BT_CTLR_TX_PWR
-    default BT_CTLR_TX_PWR_PLUS_8
-endchoice
-
 endif
