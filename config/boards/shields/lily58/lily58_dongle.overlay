@@ -13,8 +13,5 @@
 
     mock_kscan: kscan_1 {
         compatible = "zmk,kscan-mock";
-        
-        columns = <16>;
-        rows = <5>;
     };
 };
