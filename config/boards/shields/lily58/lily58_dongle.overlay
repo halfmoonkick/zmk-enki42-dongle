@@ -16,6 +16,5 @@
         
         columns = <16>;
         rows = <5>;
-        events = <0>;
     };
 };
