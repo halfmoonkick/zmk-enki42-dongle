@@ -1,11 +1,11 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_ENKI42_LEFT
-	def_bool $(shields_list_contains,enki42_left)
+config SHIELD_LILY58_LEFT
+	def_bool $(shields_list_contains,Lily58_left_left)
 
-config SHIELD_ENKI42_RIGHT
-	def_bool $(shields_list_contains,enki42_right)
+config SHIELD_LILY58_RIGHT
+	def_bool $(shields_list_contains,Lily58_left_right)
 
-config SHIELD_ENKI42_DONGLE
-	def_bool $(shields_list_contains,enki42_dongle)
+config SHIELD_LILY58_DONGLE
+	def_bool $(shields_list_contains,Lily58_left_dongle)
