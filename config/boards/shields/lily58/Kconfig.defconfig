@@ -48,22 +48,3 @@ choice BT_CTLR_TX_PWR
 endchoice
 
 endif
-
-
-# Setting this to y will make the left half the central
-# We want it to be the central when dongle is not used
-
-if SHIELD_LILY58_LEFT
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-# Check if the left half is the central
-
-if ZMK_SPLIT_ROLE_CENTRAL
-config ZMK_KEYBOARD_NAME
-    default "LILY58 No Dongle"
-        
-endif # ZMK_SPLIT_ROLE_CENTRAL
-
-endif # SHIELD_MY_KEYBOARD_LEFT
