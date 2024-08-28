@@ -19,7 +19,7 @@ endchoice
 
 endif
 
-if SHIELD_MY_KEYBOARD && !ZMK_SPLIT
+if SHIELD_LILY58 && !ZMK_SPLIT
 config ZMK_KEYBOARD_NAME
     default "Lily58 Dongle"
 endif
